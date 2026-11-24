@@ -118,7 +118,8 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--red);box-sh
 .btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
 .note{border:1px solid color-mix(in srgb,var(--red) 22%,var(--ln));border-left:4px solid var(--red);border-radius:11px;padding:11px 14px;background:color-mix(in srgb,var(--red) 5%,var(--card));margin:12px 0;font-size:13px}
 #p-place .card{overflow:hidden}
-#orig{display:block;border-radius:16px}
+#orig{display:block;border-radius:16px;height:calc(100vh - 60px)!important;min-height:1000px!important}
+body:has(#p-place.on) .w{max-width:96vw}
 @media(max-width:700px){
  .w{padding:14px 12px 44px}.hero{padding:25px 20px 21px;border-radius:18px}
  .hero:after{right:-190px}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
@@ -139,7 +140,7 @@ input:focus,select:focus,textarea:focus{outline:0;border-color:var(--red);box-sh
 
 <section class="pg" id="p-road"></section>
 
-<section class="pg" id="p-place"><div class="card" style="padding:0"><iframe id="orig" title="Placement tracker" style="width:100%;height:calc(100vh - 150px);min-height:1900px;border:0;background:#fff"></iframe></div><p class="mu">Your original Placement Tracker (Java-first), fully working with all your data and tools.</p></section>
+<section class="pg" id="p-place"><div class="card" style="padding:0"><iframe id="orig" title="Placement tracker" style="width:100%;height:calc(100vh - 150px);min-height:600px;border:0;background:#fff"></iframe></div><p class="mu">Your original Placement Tracker (Java-first), fully working with all your data and tools.</p></section>
 
 <section class="pg" id="p-routine"><div class="card"><h2>Daily 3-hour routine</h2><p class="mu">Six study days, Sunday is buffer — catch up on missed ticks, revise the error log, or rest.</p>
 <table><tr><th>Block</th><th>Time</th><th>What to do</th></tr>
